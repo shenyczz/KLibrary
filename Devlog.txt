@@ -1,0 +1,26 @@
+======================================================================================
+#2011-08-16 11:08:00#
+		//_ftscanf(fp,_T("%lf %d%d%d%d"),&value,&r,&g,&b,&a);	// RGBA
+		_ftscanf(fp,_T("%lf %d%d%d"),&value,&r,&g,&b);			// RGB
+
+#2011-08-16 13:08:00#
+	删除了 KModisData 的 三个重载函数
+		// 经纬度转换为格点坐标
+		virtual BOOL LonLat2xy(double dLon,double dLat,int& x,int& y, int flag = 0);
+		// 格点坐标转换为经纬度坐标
+		virtual BOOL xy2LonLat(int x,int y,double& lon,double& lat, int flag = 0);
+		// 取得产品格点值
+		virtual float GetProductValue(double lon, double lat);
+
+#2011-08-16 17:32:00#
+	修改文件头结构
+												WORD	wComposeDays;	
+	union										union
+	{								--->		{
+		BYTE	cVersion[4];						BYTE	cVersion[2];
+		DWORD	dwVersion;							WORD	wVersion;
+	};											};
+======================================================================================
+#2011-08-18 9:23:00#
+增加产品代码 - 数据差离部分 (+50 是差离代码)
+======================================================================================

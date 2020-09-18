@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KBarnes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KContourBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KContourTracer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KFitting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KG2VInterpolate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGridDensify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGridExtract.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KIntegral.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KInterpolate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KLinearEquation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KMath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KMatrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KPolynomial.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KQContourBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KQContourTracer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KRandom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KRegression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KSFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KSmooth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KStatistic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KTContourBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KTContourTracer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KV2GInterpolate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KV2VInterpolate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KPhysConst.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KFormelParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KBarnes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KContourBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KContourTracer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KFitting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KG2VInterpolate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGridDensify.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGridExtract.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KIntegral.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KInterpolate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KLinearEquation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KMath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KMatrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KPolynomial.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KQContourBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KQContourTracer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRandom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRegression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KSFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KSmooth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KStatistic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KTContourBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KTContourTracer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KV2GInterpolate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KV2VInterpolate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KFormelParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KPhysConst.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KindMath.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

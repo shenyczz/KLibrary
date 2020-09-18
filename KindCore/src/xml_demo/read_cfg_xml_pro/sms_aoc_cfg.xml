@@ -1,0 +1,15 @@
+<configuration>
+	<!-- conn标识连接物理数据库的字符串，corpid，sql标识插入到物理库的短信(如果不需要可以不填) -->
+	<oracle connstr="sm_tel/tel_sm@ORA10_80" connstr2="sm_serv/sm_serv@ORA10_80"></oracle>
+	<log path="/public/sm/dev/sm/log/aoclog" level="2" depart="234" sync="1"></log>
+	<sgipcfg path="/public/sm/dev/sm/aoc/config/sm_sgip_aoc_cfg.xml" flag="0"></sgipcfg> <!--flag标识是否使用sgip协议，0:无，1：使用sgip协议，2：使用smpp+协议-->
+	<dbcycler time="3"></dbcycler><!--如果 amout 配置为非 0 ，建议此处时间设为 1-->
+	<sqlstr sql="insert into BASE_SMSTOSEND(Smsid,Smsspid,smsservicecode,smsorginaddr,smsdesttype,    smsdestaddr,Smsmutilid,smsneedreprot,smsmsglevel,smssendtime,     Smsfeetype,Smsfeemode,Smsfeecode,smscreatorid,smssubmittime,Smsendtime,Smsretry,Smscontent,smssendtype,extype1,extype2,Servicekey) values(:1,'23142020','123000000000000002152',:2,0, :3,0,0,1,SYSDATE,1,2,0,4,SYSDATE, SYSDATE,1,:4,0,0, 0,0)" paramType=""></sqlstr>
+	<!--参数类型，支持三个参数和四个参数两种模式，三个参数的sql中么有序号ID项 -->
+	<sqlstr2 sql2="select latn_id from tb_prd_prd_inst where service_nbr=:1" businessIdSwitch="1"></sqlstr2>
+	<other corpid="84018" retry="3" smslenth="102" smsbak="1" amount="0" restrict="0" default="15" longmsg="0" textcontent="0" smppconnectiontype="0" prefixOfChargeNum="0" timelimit="0"></other>
+	<!-- amount 标识每次最大发送次数，用于流量限制的情况，0为无限制--><!--longmsg超长短信标识，在启动使用sgip/smpp前提下，不配置或者配置为0则不发超长短信，配置为1则发送超长短信--><!--textcontent海南历史备份表显示真实短信标识，配置为1显示真实短信，不配置或者配置为0则不变--><!--SMPP连接方式不配或者配置为0时，连接为bind，配置为1时，连接为bind_trans-->
+	<!--prefixofChargeNum用来控制在插入BASE表中的数据，计费号码前缀，不填则不带前缀-->
+	<!--restrictDeleteSwitch,受限短信是否立即删除控制，默认为0，不删除，配置为1时，受限则删除-->
+	<!-- sqlstr2配置项为西藏配合接口侧修改需要的JSON格式参数写入配置参数，sql2为latnid获取sql；businessIdSwitch开关为是否从HLP_SYS_SYSTEM表中获取字段值并插入中间表；当sql2配置不为空时，需要在insert语句中加入新的参数字段latn_id;当businessidSwitch配置为1，打开时，sql2必须配置，且在insert语句中加入新的参数字段businessid-->
+</configuration>

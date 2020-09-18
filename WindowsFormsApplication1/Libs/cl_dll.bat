@@ -1,0 +1,2 @@
+rem Cleanup
+del *.dll

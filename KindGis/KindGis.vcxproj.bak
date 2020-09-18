@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67FB98A1-84CA-4D60-B5C5-6D8620DA317E}</ProjectGuid>
+    <RootNamespace>KindGis</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <Suffix_Configuration Condition="'$(Configuration)'=='Debug'">d</Suffix_Configuration>
+    <Suffix_Configuration Condition="'$(Configuration)'=='Unicode Debug'">ud</Suffix_Configuration>
+    <Suffix_Configuration Condition="'$(Configuration)'=='Release'">r</Suffix_Configuration>
+    <Suffix_Configuration Condition="'$(Configuration)'=='Unicode Release'">ur</Suffix_Configuration>
+    <Suffix>$(Suffix_Configuration)$(PlatformArchitecture)</Suffix>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+    <IntDir>$(SolutionDir)Tempout\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformToolsetVersion)$(Suffix_Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+    <IntDir>$(SolutionDir)Tempout\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformToolsetVersion)$(Suffix_Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+    <IntDir>$(SolutionDir)Tempout\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformToolsetVersion)$(Suffix_Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+    <IntDir>$(SolutionDir)Tempout\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformToolsetVersion)$(Suffix_Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;KINDGIS_EXPORTS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\inl;$(SolutionDir)Include\template;$(SolutionDir)KindGis;$(SolutionDir)KindGis\src;$(SolutionDir)KindBase\src;$(SolutionDir)KindCore\src;$(SolutionDir)KindWin32\src;$(SolutionDir)KindResource\src;$(SolutionDir)KindGeo\src;$(SolutionDir)KindMath\src;$(SolutionDir)KindData\src;$(SolutionDir)KindMfc\src;$(SolutionDir)KindAgmrs\src;$(SolutionDir)KindDiamond\src;$(SolutionDir)KindAxin\src;$(SolutionDir)KindRadar\src;$(SolutionDir)KindProvider\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\KindGis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;KINDGIS_EXPORTS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\inl;$(SolutionDir)Include\template;$(SolutionDir)KindGis;$(SolutionDir)KindGis\src;$(SolutionDir)KindBase\src;$(SolutionDir)KindCore\src;$(SolutionDir)KindWin32\src;$(SolutionDir)KindResource\src;$(SolutionDir)KindGeo\src;$(SolutionDir)KindMath\src;$(SolutionDir)KindData\src;$(SolutionDir)KindMfc\src;$(SolutionDir)KindAgmrs\src;$(SolutionDir)KindDiamond\src;$(SolutionDir)KindAxin\src;$(SolutionDir)KindRadar\src;$(SolutionDir)KindProvider\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\KindGis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;KINDGIS_EXPORTS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\inl;$(SolutionDir)Include\template;$(SolutionDir)KindGis;$(SolutionDir)KindGis\src;$(SolutionDir)KindBase\src;$(SolutionDir)KindCore\src;$(SolutionDir)KindWin32\src;$(SolutionDir)KindResource\src;$(SolutionDir)KindGeo\src;$(SolutionDir)KindMath\src;$(SolutionDir)KindData\src;$(SolutionDir)KindMfc\src;$(SolutionDir)KindAgmrs\src;$(SolutionDir)KindDiamond\src;$(SolutionDir)KindAxin\src;$(SolutionDir)KindRadar\src;$(SolutionDir)KindProvider\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\KindGis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;KINDGIS_EXPORTS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\inl;$(SolutionDir)Include\template;$(SolutionDir)KindGis;$(SolutionDir)KindGis\src;$(SolutionDir)KindBase\src;$(SolutionDir)KindCore\src;$(SolutionDir)KindWin32\src;$(SolutionDir)KindResource\src;$(SolutionDir)KindGeo\src;$(SolutionDir)KindMath\src;$(SolutionDir)KindData\src;$(SolutionDir)KindMfc\src;$(SolutionDir)KindAgmrs\src;$(SolutionDir)KindDiamond\src;$(SolutionDir)KindAxin\src;$(SolutionDir)KindRadar\src;$(SolutionDir)KindProvider\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\KindGis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="KindGis.def" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\kidr_too.bmp" />
+    <None Include="res\KindGis.rc2" />
+    <None Include="res\Layer.bmp" />
+    <None Include="res\properti.ico" />
+    <None Include="res\properti_hc.ico" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\toolbarBlackboard.bmp" />
+    <None Include="res\toolbarLayer.bmp" />
+    <None Include="res\toolbarRoam.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\KAgmrsDataDocument.cpp" />
+    <ClCompile Include="src\KAgmrsDataRender.cpp" />
+    <ClCompile Include="src\KAgmrsDataView.cpp" />
+    <ClCompile Include="src\KBlackboardDocument.cpp" />
+    <ClCompile Include="src\KBlackboardRender.cpp" />
+    <ClCompile Include="src\KBlackboardView.cpp" />
+    <ClCompile Include="src\KCallbackFunc.cpp" />
+    <ClCompile Include="src\KDiamondGridDataRender.cpp" />
+    <ClCompile Include="src\KDiamondDataDocument.cpp" />
+    <ClCompile Include="src\KDiamondDataView.cpp" />
+    <ClCompile Include="src\KFinalDocument.cpp" />
+    <ClCompile Include="src\KFinalView.cpp" />
+    <ClCompile Include="src\KGisDocument.cpp" />
+    <ClCompile Include="src\KGisDocumentBase.cpp" />
+    <ClCompile Include="src\KGisFrameWnd.cpp" />
+    <ClCompile Include="src\KGisMdiFrameWnd.cpp" />
+    <ClCompile Include="src\KGisView.cpp" />
+    <ClCompile Include="src\KGisViewBase.cpp" />
+    <ClCompile Include="src\KGisWinApp.cpp" />
+    <ClCompile Include="src\KGridImageDataRender.cpp" />
+    <ClCompile Include="src\KImageCtrlDataRender.cpp" />
+    <ClCompile Include="src\KLayer.cpp" />
+    <ClCompile Include="src\KLayerDockablePane.cpp" />
+    <ClCompile Include="src\KLayerProperty.cpp" />
+    <ClCompile Include="src\KGridContourDataRender.cpp" />
+    <ClCompile Include="src\KAxinDataDocument.cpp" />
+    <ClCompile Include="src\KAxinDataView.cpp" />
+    <ClCompile Include="src\KMapEngine.cpp" />
+    <ClCompile Include="src\KMouseListener.cpp" />
+    <ClCompile Include="src\KMouseListenerCollection.cpp" />
+    <ClCompile Include="src\KOutputDockablePane.cpp" />
+    <ClCompile Include="src\KPropertyDockablePane.cpp" />
+    <ClCompile Include="src\KRadarDataDocument.cpp" />
+    <ClCompile Include="src\KRadarDataView.cpp" />
+    <ClCompile Include="src\KRender.cpp" />
+    <ClCompile Include="src\KRollupDockablePane.cpp" />
+    <ClCompile Include="src\KRpgDataRender.cpp" />
+    <ClCompile Include="src\KShapeFileDocument.cpp" />
+    <ClCompile Include="src\KShapeFileView.cpp" />
+    <ClCompile Include="src\KShapeDataRender.cpp" />
+    <ClCompile Include="src\KStationDataRender.cpp" />
+    <ClCompile Include="src\KWindVectorDataRender.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KLayerProperty.h" />
+    <ClInclude Include="src\GisResource.h" />
+    <ClInclude Include="src\KAgmrsDataDocument.h" />
+    <ClInclude Include="src\KAgmrsDataRender.h" />
+    <ClInclude Include="src\KAgmrsDataView.h" />
+    <ClInclude Include="src\KBlackboardDocument.h" />
+    <ClInclude Include="src\KBlackboardRender.h" />
+    <ClInclude Include="src\KBlackboardView.h" />
+    <ClInclude Include="src\KCallbackFunc.h" />
+    <ClInclude Include="src\KDiamondGridDataRender.h" />
+    <ClInclude Include="src\KDiamondDataDocument.h" />
+    <ClInclude Include="src\KDiamondDataView.h" />
+    <ClInclude Include="src\KFinalDocument.h" />
+    <ClInclude Include="src\KFinalView.h" />
+    <ClInclude Include="src\KGisDocument.h" />
+    <ClInclude Include="src\KGisDocumentBase.h" />
+    <ClInclude Include="src\KGisFrameWnd.h" />
+    <ClInclude Include="src\KGisMdiFrameWnd.h" />
+    <ClInclude Include="src\KGisView.h" />
+    <ClInclude Include="src\KGisViewBase.h" />
+    <ClInclude Include="src\KGisWinApp.h" />
+    <ClInclude Include="src\KGridImageDataRender.h" />
+    <ClInclude Include="src\KImageCtrlDataRender.h" />
+    <ClInclude Include="src\KLayer.h" />
+    <ClInclude Include="src\KLayerDockablePane.h" />
+    <ClInclude Include="src\KLayerProperty.h" />
+    <ClInclude Include="src\KAxinDataDocument.h" />
+    <ClInclude Include="src\KGridContourDataRender.h" />
+    <ClInclude Include="src\KAxinDataView.h" />
+    <ClInclude Include="src\KMapEngine.h" />
+    <ClInclude Include="src\KMouseListener.h" />
+    <ClInclude Include="src\KMouseListenerCollection.h" />
+    <ClInclude Include="src\KOutputDockablePane.h" />
+    <ClInclude Include="src\KPropertyDockablePane.h" />
+    <ClInclude Include="src\KRadarDataDocument.h" />
+    <ClInclude Include="src\KRadarDataView.h" />
+    <ClInclude Include="src\KRender.h" />
+    <ClInclude Include="src\KRollupDockablePane.h" />
+    <ClInclude Include="src\KRpgDataRender.h" />
+    <ClInclude Include="src\KShapeFileDocument.h" />
+    <ClInclude Include="src\KShapeFileView.h" />
+    <ClInclude Include="src\KShapeDataRender.h" />
+    <ClInclude Include="src\KStationDataRender.h" />
+    <ClInclude Include="src\KWindVectorDataRender.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KindGis.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="KindGis.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98AC3D83-81F1-4B11-B14F-2062B451F225}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>KindAgmrs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <Suffix_Configuration Condition="'$(Configuration)'=='Debug'">d</Suffix_Configuration>
+    <Suffix_Configuration Condition="'$(Configuration)'=='Unicode Debug'">ud</Suffix_Configuration>
+    <Suffix_Configuration Condition="'$(Configuration)'=='Release'">r</Suffix_Configuration>
+    <Suffix_Configuration Condition="'$(Configuration)'=='Unicode Release'">ur</Suffix_Configuration>
+    <Suffix>$(Suffix_Configuration)$(PlatformArchitecture)</Suffix>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+    <IntDir>$(SolutionDir)Tempout\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformToolsetVersion)$(Suffix_Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+    <IntDir>$(SolutionDir)Tempout\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformToolsetVersion)$(Suffix_Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+    <IntDir>$(SolutionDir)Tempout\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformToolsetVersion)$(Suffix_Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Lib\</OutDir>
+    <IntDir>$(SolutionDir)Tempout\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformToolsetVersion)$(Suffix_Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;KINDAGMRS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\inl;$(SolutionDir)Include\template;$(SolutionDir)KindAgmrs;$(SolutionDir)KindAgmrs\src;$(SolutionDir)KindBase\src;$(SolutionDir)KindCore\src;$(SolutionDir)KindWin32\src;$(SolutionDir)KindGeo\src;$(SolutionDir)KindMath\src;$(SolutionDir)KindData\src;$(SolutionDir)KindAxin\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;KINDAGMRS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\inl;$(SolutionDir)Include\template;$(SolutionDir)KindAgmrs;$(SolutionDir)KindAgmrs\src;$(SolutionDir)KindBase\src;$(SolutionDir)KindCore\src;$(SolutionDir)KindWin32\src;$(SolutionDir)KindGeo\src;$(SolutionDir)KindMath\src;$(SolutionDir)KindData\src;$(SolutionDir)KindAxin\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;KINDAGMRS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\inl;$(SolutionDir)Include\template;$(SolutionDir)KindAgmrs;$(SolutionDir)KindAgmrs\src;$(SolutionDir)KindBase\src;$(SolutionDir)KindCore\src;$(SolutionDir)KindWin32\src;$(SolutionDir)KindGeo\src;$(SolutionDir)KindMath\src;$(SolutionDir)KindData\src;$(SolutionDir)KindAxin\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;KINDAGMRS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include;$(SolutionDir)Include\inl;$(SolutionDir)Include\template;$(SolutionDir)KindAgmrs;$(SolutionDir)KindAgmrs\src;$(SolutionDir)KindBase\src;$(SolutionDir)KindCore\src;$(SolutionDir)KindWin32\src;$(SolutionDir)KindGeo\src;$(SolutionDir)KindMath\src;$(SolutionDir)KindData\src;$(SolutionDir)KindAxin\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\KAgmrsThreshold.h" />
+    <ClInclude Include="src\KAgmrsAlgorithm.h" />
+    <ClInclude Include="src\KAgmrsData.h" />
+    <ClInclude Include="src\KAgmrsDataProcessor.h" />
+    <ClInclude Include="src\KAvhrrAlgorithm.h" />
+    <ClInclude Include="src\KAvhrrData.h" />
+    <ClInclude Include="src\KAvhrrDataProcessor.h" />
+    <ClInclude Include="src\KLDAlgorithm.h" />
+    <ClInclude Include="src\KLDFile.h" />
+    <ClInclude Include="src\KLDFileProcessor.h" />
+    <ClInclude Include="src\KMersiAlgorithm.h" />
+    <ClInclude Include="src\KMersiData.h" />
+    <ClInclude Include="src\KMersiDataProcessor.h" />
+    <ClInclude Include="src\KModisAlgorithm.h" />
+    <ClInclude Include="src\KModisData.h" />
+    <ClInclude Include="src\KModisDataProcessor.h" />
+    <ClInclude Include="src\KVirrAlgorithm.h" />
+    <ClInclude Include="src\KVirrData.h" />
+    <ClInclude Include="src\KVirrDataProcessor.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\KAgmrsThreshold.cpp" />
+    <ClCompile Include="src\KAgmrsAlgorithm.cpp" />
+    <ClCompile Include="src\KAgmrsData.cpp" />
+    <ClCompile Include="src\KAgmrsDataProcessor.cpp" />
+    <ClCompile Include="src\KAvhrrAlgorithm.cpp" />
+    <ClCompile Include="src\KAvhrrData.cpp" />
+    <ClCompile Include="src\KAvhrrDataProcessor.cpp" />
+    <ClCompile Include="src\KLDAlgorithm.cpp" />
+    <ClCompile Include="src\KLDFile.cpp" />
+    <ClCompile Include="src\KLDFileProcessor.cpp" />
+    <ClCompile Include="src\KMersiAlgorithm.cpp" />
+    <ClCompile Include="src\KMersiData.cpp" />
+    <ClCompile Include="src\KMersiDataProcessor.cpp" />
+    <ClCompile Include="src\KModisAlgorithm.cpp" />
+    <ClCompile Include="src\KModisData.cpp" />
+    <ClCompile Include="src\KModisDataProcessor.cpp" />
+    <ClCompile Include="src\KVirrAlgorithm.cpp" />
+    <ClCompile Include="src\KVirrData.cpp" />
+    <ClCompile Include="src\KVirrDataProcessor.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KindAgmrs.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

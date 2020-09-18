@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="KindMfc.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\KindMfc.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KWinAppEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KFrameWndEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KMDIFrameWndEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KTreeCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KSplashScreen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KSplitterWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KScrollView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAdoCommand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAdoDatabase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAdoParameter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAdoRecordset.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KJetEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KOleDbDataLink.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDockablePane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDockablePaneToolBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KPrintView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KHistogramWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KEditCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRichEditCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KEditCtrlDockablePane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KWinAppEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KFrameWndEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KMDIFrameWndEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KTreeCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KSplitterWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KSplashScreen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KScrollView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KOleDbException.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAdoCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAdoDatabase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAdoException.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAdoParameter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAdoRecordset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KJetEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KOleDbDataLink.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDockablePaneToolBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDockablePane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KPrintView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KHistogramWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KEditCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KRichEditCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KEditCtrlDockablePane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KindMfc.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

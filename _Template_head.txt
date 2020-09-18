@@ -1,0 +1,82 @@
+/******************************************************************************
+ ** KObject.h
+ **
+ ** Announce: Written by ShenYongchen(shenyczz@163.com),ZhengZhou,HeNan.
+ **           All rights reserved.
+ **
+ **     Name: KObject
+ **  Version: 
+ ** Function: 
+ **  Explain: 
+ **
+ **   Author: 申永辰.郑州 (shenyczz@163.com)
+ ** DateTime: 2000 -
+ ** Web Site: 
+ **
+ ** Modifier: 
+ ** DateTime: 
+ **  Explain: 
+ **
+ **    Usage: 
+ **
+******************************************************************************/
+
+//---------------------------------------------------------
+// Name:     name
+// Function: function
+// Parameters:
+//	[i] lpcwszSource - 源字符串指针
+//	[o] lpszDest - 目的字符串指针
+//
+// Return: true/false
+// Comment: 
+//---------------------------------------------------------
+
+
+#ifndef __INCLUDED_Template_H__
+#define __INCLUDED_Template_H__
+
+#pragma pack(1)
+
+#pragma pack()
+
+#endif	//#ifndef __INCLUDED_Template_H__
+
+
+
+$(SolutionDir)Lib
+$(SolutionDir)Tempout\$(ProjectName)\$(ConfigurationName)
+
+D:\Shenyc\vs2008\vc\KindLibrary\Lib;D:\Shenyc\vs2008\vc\KindLib\Lib;D:\Shenyc\vs2008\vc\SfxDLL\Lib;D:\Shenyc\vs2008\vc\KfxLib\Lib
+
+
+//int GetEncoderClsid(const WCHAR* format, CLSID* pClsid)
+//{
+//   UINT  num = 0;          // number of image encoders
+//   UINT  size = 0;         // size of the image encoder array in bytes
+//
+//   ImageCodecInfo* pImageCodecInfo = NULL;
+//
+//   GetImageEncodersSize(&num, &size);
+//   if(size == 0)
+//      return -1;  // Failure
+//
+//   pImageCodecInfo = (ImageCodecInfo*)(malloc(size));
+//   if(pImageCodecInfo == NULL)
+//      return -1;  // Failure
+//
+//   GetImageEncoders(num, size, pImageCodecInfo);
+//
+//   for(UINT j = 0; j < num; ++j)
+//   {
+//      if( wcscmp(pImageCodecInfo[j].MimeType, format) == 0 )
+//      {
+//         *pClsid = pImageCodecInfo[j].Clsid;
+//         free(pImageCodecInfo);
+//         return j;  // Success
+//      }    
+//   }
+//
+//   free(pImageCodecInfo);
+//   return -1;  // Failure
+//}

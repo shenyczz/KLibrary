@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="KindGis.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\KindGis.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbarLayer.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbarRoam.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbarBlackboard.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\kidr_too.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\properti.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\properti_hc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Layer.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KCallbackFunc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KMapEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KLayer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGisFrameWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGisMdiFrameWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGisDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGisView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGisWinApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KOutputDockablePane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KLayerDockablePane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KPropertyDockablePane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KLayerProperty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KMouseListener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KMouseListenerCollection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KBlackboardDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KShapeFileDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KBlackboardView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KShapeFileView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KFinalDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KFinalView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KBlackboardRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGisDocumentBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGisViewBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAgmrsDataDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAgmrsDataView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDiamondDataDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDiamondDataView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRadarDataDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRadarDataView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRpgDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAgmrsDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGridContourDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KShapeDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAxinDataDocument.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KAxinDataView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KStationDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KImageCtrlDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KWindVectorDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KGridImageDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KDiamondGridDataRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KRollupDockablePane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KCallbackFunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KMapEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KLayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGisFrameWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGisMdiFrameWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGisDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGisView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGisWinApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KOutputDockablePane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KLayerDockablePane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KPropertyDockablePane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GisResource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KLayerProperty.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KLayerProperty.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KMouseListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KMouseListenerCollection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KBlackboardDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KShapeFileDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KBlackboardView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KShapeFileView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KFinalDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KFinalView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KBlackboardRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGisViewBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGisDocumentBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KRadarDataView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAgmrsDataDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAgmrsDataView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDiamondDataDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDiamondDataView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KRadarDataDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KRpgDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAgmrsDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGridContourDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KShapeDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAxinDataDocument.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KAxinDataView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KStationDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KImageCtrlDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KWindVectorDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KGridImageDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KDiamondGridDataRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KRollupDockablePane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KindGis.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
